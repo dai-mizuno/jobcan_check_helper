@@ -1,7 +1,6 @@
-// テーブルを走査し、今日の日付を含む行をハイライトする
-function highlightTodayRows() {
+function highlightRemoteApplicationRows() {
   // テーブル要素を取得
-  const table = document.querySelector("table.note"); // 例: 'table.your-table-class'
+  const table = document.querySelector("table.note");
 
   if (table) {
     const rows = table.querySelectorAll("tbody tr"); // tbody内の行を取得
@@ -40,4 +39,4 @@ function highlightTodayRows() {
 }
 
 // ページ読み込み完了後にハイライト処理を実行
-window.addEventListener("load", highlightTodayRows);
+window.addEventListener("load", highlightRemoteApplicationRows);
